@@ -25,8 +25,9 @@
       <div class="confirm__heading">
         <h2>お問い合わせ内容確認</h2>
       </div>
-      <form class="form">
+      <form class="form" action="/contacts" method="post">
         <div class="confirm-table">
+          @csrf
           <table class="confirm-table__inner">
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>

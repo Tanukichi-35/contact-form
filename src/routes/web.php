@@ -21,3 +21,7 @@ Route::get('/', [
 Route::post('/contacts/confirm', [
     ContactController::class, 'confirm'
 ]);
+
+Route::post('/contacts', [
+    ContactController::class, 'store'
+]);
